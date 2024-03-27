@@ -195,6 +195,7 @@ main {
     text-transform: uppercase;
     font-weight: 600;
     line-height: 23.17px;
+    font-family: "Manrope";
     p {
         display: flex;
         align-items: center;
@@ -821,7 +822,7 @@ main {
 }
 .story {
     padding: 118px 0;
-    background-image: url(../img/story_bg.jpg);
+   background-image: url(../img/story_bg.jpg);
     text-align: center;
 }
 .sub-story {
@@ -1105,7 +1106,49 @@ main {
     padding-top: 56.25%;
     background-color: #000;
 }
-
+.membership {
+    padding-top: 141px;
+    padding-bottom: 209px;
+}
 .membership-title {
     text-align: center;
+    .section-title {
+        margin-bottom: 43px;
+    }
+}
+.cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.membership-card {
+    padding: 39px 40px;
+    background-color: #1E2C30;
+}
+.name {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-family: "PlayfairDisplay";
+    font-size: 26px;
+    line-height: 33.8px;
+    .title-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 100%;
+}
+}
+.membership-item {
+    position: relative;
+    font-size: 18px;
+    line-height: 39.6px;
+    color: #fff;
+    padding-left: 47px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/check-circle.svg);
+        top: 8px;
+        left: 0;
+    }
 }
